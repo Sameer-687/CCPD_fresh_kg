@@ -196,7 +196,7 @@ if __name__=='__main__':
             lrScheduler.step()
             start = time()
 
-            for i, (XI, YI) in tqdm(enumerate(trainloader)):  #tqdm e change
+            for i, (XI, YI) in enumerate(trainloader):  #tqdm e change
                 # print('%s/%s %s' % (i, times, time()-start))
                 YI = np.array([el.numpy() for el in YI]).T
                 if use_gpu:

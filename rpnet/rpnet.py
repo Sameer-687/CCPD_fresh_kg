@@ -352,7 +352,7 @@ if __name__=='__main__':
             lrScheduler.step()
             start = time()
 
-            for i, (XI, Y, labels, ims) in enumerate(tqdm(trainloader)):
+            for i, (XI, Y, labels, ims) in enumerate(trainloader)):
                 if not len(XI) == batchSize:
                     continue
 
