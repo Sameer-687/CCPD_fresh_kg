@@ -253,7 +253,7 @@ if __name__=='__main__':
                     help="file for output")
     args = vars(ap.parse_args())
 
-    wR2Path = './wR2/wR2.pth19'
+    wR2Path = './wR2/wR2.pth'
     use_gpu = torch.cuda.is_available()
     print (use_gpu)
 
